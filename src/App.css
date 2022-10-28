@@ -79,6 +79,11 @@
   margin-bottom: 24px;
 }
 
+.profile-links p{
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 10px 0 0;
+}
 .social-section{
   display: flex;
   align-items: center;
@@ -152,6 +157,10 @@ footer{
   .profile-links a{
     font-size: 14px;
     font-weight: 500;
+  }
+
+  .profile-links p{
+    font-size: 12px;
   }
 
   footer{
