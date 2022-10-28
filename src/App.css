@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ max-width: 100%;
+}
+
+.App {
+  text-align: center;
+  background-color: #fff;
+  color: #101828;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile{
+  width: 80%;
+  margin: 64px auto;
+}
+
+.profile-section{
+  position: relative;
+}
+
+.mobile-btn{
+  display: none;
+}
+
+.share{
+  width: 40px;
+  border-radius: 50%;
+  border: 1px dashed #d0d5dd;
+  z-index: 2;
+  height:40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: -19.17px;
+  right: 200px;
+}
+
+.profile-section #profile__img{
+  width: 88px;
+  border-radius: 50%;
+}
+
+#twitter{
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 24px;
+  text-align: center;
+}
+
+#slack{
+  display: none;
+}
+
+.profile-links{
+  padding: 56px 0 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-links a{
+  text-decoration: none;
+  background-color: #eaecf0;
+  border-radius: 8px;
+  border: 1px solid #eaecf0;
+  color: #101828;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 24px 0;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.social-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:24px 32px;
+  /* width: 84.444%; */
+  margin: 0 auto;
+}
+
+.social-section a{
+  margin-right: 24px;
+  width: 24px;
+}
+
+footer{
+  padding: 48px 0;
+  width: 100%;
+}
+
+.footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #eaecf0;
+  width: 84.444%;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+.footer-wrapper h6{
+  color: #667085;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.i4g-logo{
+  height: 32px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 481px){
+  .profile{
+    width: 91.47%;
+    margin: 64px auto 32px;
+  }
+
+
+  #twitter{
+    font-size: 18px;
+  }
+
+  .desktop-btn{
+    display: none;
+  }
+
+  .share{
+    right: 0;
+  }
+
+  .mobile-btn img{
+    width: 13px;
+  }
+
+  .profile-links{
+    padding-top: 32px;
+  }
+
+  .profile-links a{
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  footer{
+    padding: 32px 16px;
+  }
+
+  .footer-wrapper{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .footer-wrapper img{
+    height: 24px;
+  }
+
+  .footer-wrapper h6{
+    margin: 1rem 0;
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+
+@media(min-width:481px) and (max-width: 839px){
+  .share{
+    right: 40px;
+  }
+}
