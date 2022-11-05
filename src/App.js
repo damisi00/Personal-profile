@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path='/Personal-profile' element={<ProfilePage />} />
+          <Route exact path='/' element={<ProfilePage />} />
           <Route exact path='/contact' element={<ContactPage />} />
         </Routes>
       </BrowserRouter>
