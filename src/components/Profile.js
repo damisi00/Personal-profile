@@ -40,6 +40,13 @@ const profileLinks = [
         href: "https://books.zuri.team/design-rules",
         title: 'Design Books',
         subtext: 'A-Z on Design Rules, get for free from Zuri'
+    },
+    {
+        index: 7,
+        id: "contact",
+        href: "/contact",
+        title: 'Contact Me',
+        subtext: ''
     }
 ]
 

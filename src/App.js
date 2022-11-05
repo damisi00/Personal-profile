@@ -1,33 +1,21 @@
 
-import Slack from './assets/slack.svg';
-import Github from './assets/github.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import ContactPage from './pages/ContactPage';
+import ProfilePage from './pages/ProfilePage';
 import Footer from './components/Footer';
-import Header from './components/Header';
-import Profile from './components/Profile';
+
 
 function App() {
   return (
     <div className="App">
-      <main className="profile">
-        {/* Profile Section */}
-        <Header />
-        
-        {/* The Links section */}
-       <Profile />
-
-        <section className='social-section'>
-          <a href='https://slack.com'>
-            <img src={Slack} alt='slack icon' />
-          </a>
-
-          <a  href='https://github.com/damisi00'>
-            <img src={Github} alt='github icon' />
-          </a>
-
-        </section>
-      </main>
-     <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/Personal-profile' element={<ProfilePage />} />
+          <Route exact path='/contact' element={<ContactPage />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
     </div>
   );
 }

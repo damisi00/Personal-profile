@@ -5,11 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- max-width: 100%;
+  max-width: 100%;
+  accent-color: #1570ef;
 }
 
 .App {
-  text-align: center;
   background-color: #fff;
   color: #101828;
   font-family: 'Inter', sans-serif;
@@ -18,6 +18,7 @@
 .profile{
   width: 80%;
   margin: 64px auto;
+  text-align: center;
 }
 
 .profile-section{
@@ -124,6 +125,154 @@ footer{
   height: 32px;
 }
 
+/* Conatct Us  */
+.contact-wrap{
+  padding: 156px 0 188px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-wrap h1{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-wrap p{
+  font-size: 20px;
+  color: #475467;
+}
+
+form{
+  margin-top: 48px;
+}
+
+.contact-wrap .grp, .l-input{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-wrap .grp{
+  align-items: center;
+  width: 100%;
+}
+
+.l-input{
+  flex-direction: column;
+  /* width: 348px; */
+  width: 48.333%;
+}
+
+.ii{
+  width: 100%;
+}
+
+#email, textarea{
+  width: 100%;
+}
+
+.l-input label{
+  color:#344054;
+  font-weight: 500;
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+
+.l-input input, textarea, button{
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  margin-bottom: 24px;
+  outline: none;
+}
+
+.l-input input, textarea{
+  border: 1px solid #d0d5dd;
+}
+
+.l-input input:focus{
+  border: 1px solid #84caff;
+}
+
+.l-input input{
+  padding: 10px 14px;
+  color: #101828;
+  font-size: 16px;
+}
+
+.l-input input:-internal-autofill-selected{
+  background-color: #fff;
+}
+
+textarea{
+  padding: 12px 14px;
+  width: 100%;
+  height: 132px;
+  color: #101828;
+  font-size: 16px;
+}
+
+.check{
+  display: flex;
+}
+
+.check label{
+  padding-left: 12px;
+  color: #475467;
+  font-size: 16px;
+}
+
+.check input[type="checkbox" i]{
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #d0d5dd;
+}
+
+.check input:checked{
+  background-color: #f9fafb;
+}
+
+.check input:focus{
+  border: 1px solid #84caff;
+  box-shadow: 0px 0px 0px 4px #d1e9ff;
+}
+
+.check input:disabled{
+  border: 1px solid #d0d5dd;
+  background-color: #f2f4f7;
+}
+
+::placeholder{
+  color: #667085;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+#btn__submit{
+  width: 100%;
+  margin-top: 32px;
+  background-color: #1570ef;
+  color: #fff;
+  border: 1px solid #1570ef;
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#btn__submit:hover{
+  background-color: #175cd3;
+  border: 1px solid #175cd3;
+}
+
+#btn__submit:focus, textarea:focus{
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
+}
+
+#btn__submit:disabled{
+  background-color: #b2ddff;
+  border: 1px solid #b2ddff;
+}
 
 /* Mobile */
 
@@ -132,7 +281,6 @@ footer{
     width: 91.47%;
     margin: 64px auto 32px;
   }
-
 
   #twitter{
     font-size: 18px;
@@ -182,6 +330,28 @@ footer{
     margin: 1rem 0;
     font-size: 14px;
   }
+
+  .contact-wrap h1{
+    margin-bottom: 16px;
+  }
+
+  .contact-wrap p{
+    font-size: 18px;
+  }
+
+  .contact-wrap{
+    padding: 64px 16px 66px;
+    width: 100%;
+  }
+
+  .contact-wrap .grp{
+    flex-direction: column;
+  }
+
+  .l-input{
+    width: 100%;
+  }
+
 }
 
 /* Tablet */
@@ -189,5 +359,9 @@ footer{
 @media(min-width:481px) and (max-width: 839px){
   .share{
     right: 40px;
+  }
+
+  .contact-wrap{
+    width: 75%;
   }
 }
