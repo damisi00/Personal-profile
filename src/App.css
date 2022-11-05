@@ -7,12 +7,19 @@
   box-sizing: border-box;
   max-width: 100%;
   accent-color: #1570ef;
+  /* accent-color: #f9fafb; */
 }
 
 .App {
   background-color: #fff;
   color: #101828;
   font-family: 'Inter', sans-serif;
+}
+
+.err-msg{
+  color: #f83f23;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .profile{
@@ -211,6 +218,16 @@ textarea{
   font-size: 16px;
 }
 
+
+textarea:invalid{
+  border: 1px solid #f89687;
+}
+
+textarea:focus:invalid{
+  border: 1px solid #f89687;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05) 0px 0px 0px 4px #ffd3cc;
+}
+
 .check{
   display: flex;
 }
@@ -230,9 +247,10 @@ textarea{
 
 .check input:checked{
   background-color: #f9fafb;
+  border: 2px solid #1570ef;
 }
 
-.check input:focus{
+.check input:focus:invalid{
   border: 1px solid #84caff;
   box-shadow: 0px 0px 0px 4px #d1e9ff;
 }
@@ -265,7 +283,7 @@ textarea{
   border: 1px solid #175cd3;
 }
 
-#btn__submit:focus, textarea:focus{
+#btn__submit:focus, textarea:focus:valid{
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
 }
 
